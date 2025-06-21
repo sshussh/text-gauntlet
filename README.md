@@ -70,7 +70,7 @@ Started as my personal project to explore AI-powered text analysis, Text Gauntle
 
 ## Quick Start
 
-**Requirements**: Python 3.13+, 500MB space, internet for API features
+**Requirements**: Python 3.13+, 1.5GB space, internet for API features
 
 ### Installation
 
