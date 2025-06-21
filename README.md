@@ -17,6 +17,8 @@ A desktop sentiment analysis tool that makes understanding text emotions simple 
 
 Started as my personal project to explore AI-powered text analysis, Text Gauntlet has grown into a comprehensive app that analyzes sentiment in lyrics, movie reviews, news articles, and any text you throw at it. Built with Python and featuring a sleek dark theme.
 
+Full documentation at [DOCUMENTATION.md](DOCUMENTATION.md).
+
 ## Features
 
 ### Core Analysis
