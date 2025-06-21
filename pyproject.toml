@@ -1,0 +1,64 @@
+[project]
+name = "text-gauntlet"
+version = "2.0.0"
+description = "Modern sentiment analysis application with multiple input sources"
+readme = "README.md"
+requires-python = ">=3.13"
+authors = [
+    {name = "Montaser Amoor aka sshussh"},
+]
+dependencies = [
+    "ctktable>=1.1",
+    "customtkinter>=5.2.2",
+    "python-dotenv>=1.0.0",
+    "imdbpy>=2022.7.9",
+    "lyricsgenius>=3.6.4",
+    "nltk>=3.9.1",
+    "pandas>=2.3.0",
+    "pillow>=11.2.1",
+    "torch>=2.7.1",
+    "transformers>=4.52.4",
+    "beautifulsoup4>=4.13.4",
+]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.12.0",
+    "pytest>=8.0.0",
+    "mypy>=1.8.0",
+]
+
+[tool.ruff]
+line-length = 88
+target-version = "py313"
+
+[tool.ruff.lint]
+select = [
+    "E",  # pycodestyle errors
+    "W",  # pycodestyle warnings
+    "F",  # pyflakes
+    "I",  # isort
+    "B",  # flake8-bugbear
+    "C4", # flake8-comprehensions
+    "UP", # pyupgrade
+]
+ignore = [
+    "E501",  # line too long (handled by formatter)
+    "B008",  # do not perform function calls in argument defaults
+]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+skip-magic-trailing-comma = false
+line-ending = "auto"
+
+[tool.ruff.lint.isort]
+known-first-party = ["src"]
+
+[tool.mypy]
+python_version = "3.13"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
